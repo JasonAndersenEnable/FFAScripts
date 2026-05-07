@@ -1,0 +1,79 @@
+# =========================
+# OS / Editor files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/
+!.vscode/extensions.json
+
+.idea/
+*.iml
+
+*.swp
+*.swo
+*~
+
+# =========================
+# Logs / temp files
+# =========================
+*.log
+*.tmp
+*.bak
+*.old
+nohup.out
+
+logs/
+tmp/
+
+# =========================
+# Bash artifacts
+# =========================
+*.pid
+
+# =========================
+# PowerShell artifacts
+# =========================
+*.clixml
+*.psm1.cache
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+*.secrets.*
+secrets/
+credentials/
+
+*.pem
+*.key
+*.pfx
+
+# =========================
+# Tool state
+# =========================
+.azure/
+
+# Terraform (if used)
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# =========================
+# Build / output
+# =========================
+out/
+build/
+dist/
+
+# =========================
+# Archives
+# =========================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
