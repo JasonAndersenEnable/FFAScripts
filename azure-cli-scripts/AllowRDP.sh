@@ -1,0 +1,12 @@
+az network nsg rule create \
+  --resource-group rg-flintfox-prod-wus2-01 \
+  --nsg-name nsg-flintfox-prod-wus2-01 \
+  --name Allow-RDP-MyMachine \
+  --protocol Tcp \
+  --direction Inbound \
+  --priority 1000 \
+  --source-address-prefixes 24.9.57.128 \
+  --source-port-ranges '*' \
+  --destination-address-prefixes '*' \
+  --destination-port-ranges 3389 \
+  --access Allow
