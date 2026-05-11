@@ -110,4 +110,4 @@ function Initialize-FfaDirectories {
 }
 
 Initialize-FfaDirectories
-cd C:\projects\ffa\installs\
+Set-Location C:\projects\ffa\installs\

@@ -21,7 +21,7 @@ function Test-DotnetRuntimeInstalled {
     } else {
         $pattern = "^$([regex]::Escape($ComponentName))\s+8\."
     }
-    return ($runtimes | Where-Object { $_ -match $pattern }) -ne $null
+    return $runtimes -match $pattern 
 }
 
 function Test-UrlRewriteInstalled {
