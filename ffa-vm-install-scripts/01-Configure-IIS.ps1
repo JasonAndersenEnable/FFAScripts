@@ -52,3 +52,5 @@ foreach ($p in $portsToCheck) {
 
 Write-Host ''
 Write-Ok 'IIS and firewall configuration complete.'
+Write-Host 'Next: run 02-Install-Dotnet.ps1' -ForegroundColor Yellow
+

@@ -97,3 +97,7 @@ if ($Cfg.SkipVsCode) {
         Write-Warn 'VS Code expected install path not found post-install. Check the VS Code install directory.'
     }
 }
+
+Write-Host ''
+Write-Ok 'Tools installation complete.'
+Write-Host 'Next: run 05-Verify-Prerequisites.ps1' -ForegroundColor Yellow

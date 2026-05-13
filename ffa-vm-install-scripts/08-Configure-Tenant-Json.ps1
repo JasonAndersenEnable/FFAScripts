@@ -68,6 +68,10 @@ function Set-Value {
     # Interactive prompt
     $current = $null
     if ($config.PSObject.Properties.Name -contains $Key) { $current = $config.$Key }
+
+    # Strip JSON template placeholder wrapper, e.g. <default C:\some\path>
+    if ($current -match '^\<default (.+)\>$') { $current = $matches[1] }
+
     if ([string]::IsNullOrEmpty($current) -and $Default) { $current = $Default }
     Write-Host ''
     Write-Host "  $Key" -ForegroundColor Cyan
@@ -110,4 +114,5 @@ $config | ConvertTo-Json -Depth 10 | Set-Content -Path $targetJsonPath -Encoding
 Write-Ok "Saved: $targetJsonPath"
 
 Write-Host ''
+Write-Host 'Installation JSON configuration complete.'
 Write-Host 'Next: run 09-Setup-Binaries.ps1 to download the pipeline drop and DacPacs.' -ForegroundColor Yellow

@@ -169,3 +169,7 @@ $checks = @(
 foreach ($c in $checks) {
     if (& $c.Test) { Write-Ok $c.Name } else { Write-Warn "$($c.Name): FAIL" }
 }
+
+Write-Host ''
+Write-Ok 'DotNET installation complete.'
+Write-Host 'Next: run 03-Install-UrlRewrite.ps1' -ForegroundColor Yellow

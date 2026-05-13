@@ -123,4 +123,5 @@ Set-ExecutionPolicy Bypass -Scope LocalMachine -Force
 Write-Ok 'Execution policy set to Bypass (LocalMachine)'
 
 Write-Host ''
+Write-Host 'Download Installer complete.'
 Write-Host 'Next: run 08-Configure-Tenant-Json.ps1 to populate the Installation JSON values.' -ForegroundColor Yellow

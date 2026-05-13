@@ -111,3 +111,6 @@ function Initialize-FfaDirectories {
 
 Initialize-FfaDirectories
 Set-Location C:\projects\ffa\installs\
+
+Write-Host 'Next: Copy the vm install scripts to the target machine on this folder' -ForegroundColor Yellow
+Write-Host 'Then run the scripts in order, starting with 01-Install-Prereqs.ps1' -ForegroundColor Yellow

@@ -22,8 +22,8 @@ $preInstallSequence = @(
     'PreInstall-Configure-Firewall-For-Service.ps1',
     'PreInstall-Configure-Firewall-For-WebSites.ps1',
     'PreInstall-Generate-Localhost-Certificate.ps1',
-    '00-StopApplications.ps1',
-    '01-DeployConfigDb.ps1'
+    '00-StopApplications.ps1'
+
 )
 
 Push-Location $scriptsFolder
@@ -59,4 +59,5 @@ try {
 }
 
 Write-Host ''
-Write-Host 'Next: run 11-Install-FFA.ps1 to invoke the main InstallFFA.ps1' -ForegroundColor Yellow
+Write-Host 'Next: run Manual Installation Scripts in ManualInstallationScripts folder' -ForegroundColor Yellow
+Set-Location 'ManualInstallationScripts'

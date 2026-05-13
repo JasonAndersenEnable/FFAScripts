@@ -42,3 +42,7 @@ if ((Get-Service W3SVC).Status -ne 'Running') { Write-Err 'W3SVC did not return 
 Write-Ok 'IIS restarted'
 
 if (Test-UrlRewriteInstalled) { Write-Ok 'URL Rewrite verified' } else { Write-Warn 'URL Rewrite: FAIL' }
+
+Write-Host ''
+Write-Ok 'URL Rewrite installation complete.'
+Write-Host 'Next: run 04-Install-FFA.ps1' -ForegroundColor Yellow

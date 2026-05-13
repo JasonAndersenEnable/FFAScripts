@@ -179,4 +179,5 @@ if ($missing -and $missing -notcontains 'Flintfox.Azara.Data.Config.SQL.dacpac')
 }
 
 Write-Host ''
+Write-Host 'Binaries setup complete.'
 Write-Host 'Next: run 10-Run-PreInstall.ps1 (configures firewall, generates cert, deploys Config DB)' -ForegroundColor Yellow

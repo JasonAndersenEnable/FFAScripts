@@ -39,3 +39,8 @@ $detailsPath = Join-Path $Cfg.InstallRoot 'cert-details.csv'
     Store      = "Cert:\$StoreLocation\$StoreName"
 } | Export-Csv -Path $detailsPath -NoTypeInformation
 Write-Host "  Details saved: $detailsPath"
+
+
+Write-Host ''
+Write-Ok 'Import Certificate complete.'
+Write-Host 'Next: run 07-Download-Installer.ps1' -ForegroundColor Yellow
