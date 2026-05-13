@@ -23,14 +23,14 @@ INSERT [dbo].[az_Tenant]
 )
 VALUES
 (
-'GCG_T01'
+'SampleTenant_T01'
 ,NULL
-,'FlintfoxDataDB_TEST'
-,'gcg-flintfox-sql-test'
-,'GCG_TEST'
+,'RMx_SampleTenant'
+,'ffa-sql-test-01'
+,'sampleTenant'
 ,'00000000-0000-0000-0000-000000000011'
-,N'data source=gcg-flintfox-sql-test;initial catalog=FlintfoxDataDB_TEST;user id=svc-flintfoxsqladmin;password=xxx;multipleactiveresultsets=True;persist security info=true;TrustServerCertificate=True;'
-,N'https://flintfox-test.gogcg.com'
+,N'data source=ffa-sql-test-01;initial catalog=RMx_SampleTenant;user id=flintfoxsqladmin;password={the_password};multipleactiveresultsets=True;persist security info=true;TrustServerCertificate=True;'
+,N'https://flintfox-test.test.com'
 ,2
 ,NULL
 ,'1/1/2026'
