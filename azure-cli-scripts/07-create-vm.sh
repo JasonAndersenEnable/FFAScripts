@@ -34,7 +34,7 @@ prompt_vm_size() {
 
 Select VM SKU:
   1) Cheapest         - Standard_B4ms     (4 vCPU, 16 GiB, burstable)    ~$120/mo
-  2) Stable but cheap - Standard_D4s_v5   (4 vCPU, 16 GiB, general)      ~$140/mo
+  2) **Default** - Stable but cheap - Standard_D4s_v5   (4 vCPU, 16 GiB, general)      ~$140/mo
   3) More expensive   - Standard_E4s_v5   (4 vCPU, 32 GiB, mem-opt)      ~$150/mo
   4) Production       - Standard_E8s_v5   (8 vCPU, 64 GiB, mem-opt)      ~$300/mo  [needs >4-core quota]
 
