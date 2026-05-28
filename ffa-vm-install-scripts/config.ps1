@@ -113,7 +113,7 @@ Initialize-FfaDirectories
 Set-Location C:\projects\ffa\installs\
 
 if (-not (Get-Variable -Name 'FFA_ConfigBannerShown' -Scope Global -ErrorAction SilentlyContinue)) {
-    Write-Host 'Next: Copy the vm install scripts to the target machine on this folder' -ForegroundColor Yellow
+    Write-Host 'Next: Copy the vm install scripts to the target machine to folder C:\projects\ffa\installs\' -ForegroundColor Yellow
     Write-Host 'Then run the scripts in order, starting with 01-Install-Prereqs.ps1' -ForegroundColor Yellow
     $Global:FFA_ConfigBannerShown = $true
 }
