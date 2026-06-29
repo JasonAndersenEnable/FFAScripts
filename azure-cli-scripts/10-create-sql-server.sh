@@ -53,7 +53,7 @@ else
   az sql server create \
     --resource-group "${RG}" \
     --name "${SQL_SERVER_NAME}" \
-    --location "${LOCATION}" \
+    --location "centralus" \
     --admin-user "${SQL_ADMIN_USER}" \
     --admin-password "${SQL_ADMIN_PASSWORD}" \
     --tags ${TAGS} \
